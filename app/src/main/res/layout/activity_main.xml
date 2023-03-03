@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/lVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ville"
+            android:textColor="#00AAFF"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/editVille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:layout_weight="1"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/bGo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/go"
+            android:textColor="#0088FF"
+            android:textSize="16sp"
+            android:onClick="go"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tResultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#00AAFF"
+        android:lines="7"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+</LinearLayout>
